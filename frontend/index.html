@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./icon-512.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Suchit Vanapilli's Portfolio</title>
+    <meta name="title" content="Suchit Vanapilli's Portfolio" />
+    <meta name="description" content="Portfolio of Suchit Vanapilli, an AI & ML student building practical full-stack applications, AI-powered systems and responsive digital experiences." />
+    <meta name="keywords" content="Suchit Vanapilli, AI & ML, Full-Stack Developer, Prompt Engineer, React, Node.js, Express, MongoDB, FastAPI, Python, OpenCV, Computer Vision, Portfolio" />
+    <meta name="author" content="Suchit Vanapilli" />
+    <meta name="theme-color" content="#2563EB" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/suchitvanapilli" />
+    <meta property="og:title" content="Suchit Vanapilli's Portfolio" />
+    <meta property="og:description" content="Portfolio of Suchit Vanapilli, an AI & ML student building practical full-stack applications, AI-powered systems and responsive digital experiences." />
+    <meta property="og:image" content="/suchit-portrait.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Suchit Vanapilli's Portfolio" />
+    <meta property="twitter:description" content="Portfolio of Suchit Vanapilli, an AI & ML student building practical full-stack applications, AI-powered systems and responsive digital experiences." />
+    <meta property="twitter:image" content="/suchit-portrait.jpg" />
+
+    <!-- Preconnect Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-white text-slate-900 antialiased selection:bg-blue-600 selection:text-white min-h-screen">
+    <div id="root"></div>
+    <script>
+      // Automatic detection: If served via VS Code Live Server (port 5500/5501) instead of Vite dev server, redirect to compiled dist/
+      if ((window.location.port === "5500" || window.location.port === "5501") && !window.location.pathname.includes("/dist/")) {
+        window.location.replace("./dist/index.html");
+      }
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

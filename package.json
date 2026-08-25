@@ -1,0 +1,41 @@
+{
+  "name": "portfolio-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config frontend/vite.config.js frontend",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "node backend/src/server.js",
+    "server": "node backend/src/server.js",
+    "dev:all": "concurrently \"npm run server\" \"npm run dev\"",
+    "start": "node backend/src/server.js",
+    "build": "vite build --config frontend/vite.config.js frontend",
+    "vercel-build": "vite build --config frontend/vite.config.js frontend",
+    "preview": "vite preview --config frontend/vite.config.js frontend"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.0.4",
+    "canvas-confetti": "^1.9.4",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.6.2",
+    "framer-motion": "^13.1.1",
+    "lucide-react": "^1.33.0",
+    "mongoose": "^9.9.3",
+    "nodemailer": "^9.0.5",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "tailwindcss": "^4.3.3",
+    "validator": "^13.15.35",
+    "vite": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "concurrently": "^10.0.5",
+    "oxlint": "^1.75.0"
+  }
+}
