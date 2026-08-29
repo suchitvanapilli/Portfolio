@@ -4,26 +4,26 @@ import svLogoSrc from "../assets/sv-logo-clean.png";
 
 /**
  * FadeInLogo Component
- * Synchronized Fade-In (starts simultaneously with typewriter welcome text).
+ * Instant Logo Appearance with 1-Minute Fade-Out & Immediate Re-Fade-In Loop.
  * 
  * Timeline:
- * - 0.0s - 1.2s: Fades in smoothly simultaneously as typewriter text starts (opacity: 0 -> 1)
- * - 1.2s - 61.2s: Holds fully visible for 1 minute (100% sharp & still)
- * - 61.2s - 62.2s: Smooth fade-out (opacity: 1 -> 0)
- * - 62.2s - 63.4s: Immediately re-fades in (opacity: 0 -> 1) and repeats loop
+ * - 0.0s: Appears INSTANTLY (0s fade-in time, opacity: 1) as welcome text starts
+ * - 0.0s - 60.0s: Holds fully visible for 1 minute (100% sharp & still)
+ * - 60.0s - 61.0s: Smooth fade-out (opacity: 1 -> 0)
+ * - 61.0s - 61.4s: Immediately re-appears / re-fades in (opacity: 0 -> 1) and repeats loop
  */
 export default function FadeInLogo({ className = "w-28 h-28 sm:w-36 sm:h-36" }) {
   return (
     <div className={`relative flex items-center justify-center shrink-0 ${className}`}>
-      {/* Ambient Blue Background Glow Synchronized with Logo Fade */}
+      {/* Ambient Blue Background Glow */}
       <motion.div
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 0.35 }}
         animate={{
-          opacity: [0, 0.35, 0.35, 0, 0.35]
+          opacity: [0.35, 0.35, 0, 0.35]
         }}
         transition={{
-          duration: 63.4,
-          times: [0, 1.2 / 63.4, 61.2 / 63.4, 62.2 / 63.4, 1],
+          duration: 61.4,
+          times: [0, 60 / 61.4, 61 / 61.4, 1],
           repeat: Infinity,
           ease: "easeInOut"
         }}
@@ -34,13 +34,13 @@ export default function FadeInLogo({ className = "w-28 h-28 sm:w-36 sm:h-36" }) 
       <motion.img
         src={svLogoSrc}
         alt="Suchit Vanapilli SV Logo"
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 1 }}
         animate={{
-          opacity: [0, 1, 1, 0, 1]
+          opacity: [1, 1, 0, 1]
         }}
         transition={{
-          duration: 63.4,
-          times: [0, 1.2 / 63.4, 61.2 / 63.4, 62.2 / 63.4, 1],
+          duration: 61.4,
+          times: [0, 60 / 61.4, 61 / 61.4, 1],
           repeat: Infinity,
           ease: "easeInOut"
         }}
