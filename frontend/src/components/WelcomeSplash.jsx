@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import welcomeImg from "../assets/suchit-welcome.jpg";
-import LogoMark from "./LogoMark";
 
 const fullTitle = "Welcome to My Portfolio";
 
@@ -49,33 +47,15 @@ export default function WelcomeSplash({ onComplete }) {
       transition={{ duration: 0.5, ease: "easeInOut" }}
       className="fixed inset-0 z-50 flex items-center justify-start bg-black text-white overflow-hidden p-6 sm:p-12"
     >
-      {/* Full-Screen Background Image with Pro Vignette Effect & Fill */}
+      {/* Sleek Dark Tech Ambient Background */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none bg-black">
-        <motion.img
-          initial={{ opacity: 0, scale: 1.04 }}
-          animate={{ opacity: 0.95, scale: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          src={welcomeImg}
-          alt="Suchit Vanapilli Background"
-          width="1920"
-          height="1080"
-          decoding="async"
-          className="w-full h-full object-cover object-[75%_top] filter brightness-105"
-        />
+        {/* Dynamic ambient glowing light orbs */}
+        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-blue-600/15 rounded-full blur-[120px] pointer-events-none animate-pulse" />
+        <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-indigo-600/10 rounded-full blur-[100px] pointer-events-none" />
 
-        {/* Dedicated Pure Black Fade-In Mask */}
-        <motion.div
-          initial={{ opacity: 1 }}
-          animate={{ opacity: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="absolute inset-0 bg-black pointer-events-none z-10"
-        />
-
-        {/* Pro Radial Vignette Mask focused on portrait on the right */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_40%,transparent_35%,rgba(0,0,0,0.5)_75%,#000000_100%)]" />
-        
-        {/* Directional Vignette Gradient to highlight left-side text */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/40 to-transparent" />
+        {/* High-Tech Grid Accent Pattern */}
+        <div className="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] opacity-30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/80" />
       </div>
 
       <div className="relative z-10 max-w-lg w-full text-left pl-2 sm:pl-8 lg:pl-16">
@@ -98,7 +78,6 @@ export default function WelcomeSplash({ onComplete }) {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="flex items-center gap-2.5 mb-8"
         >
-          <LogoMark className="w-6 h-6 animate-pulse" />
           <p className="text-sm font-bold text-blue-400 font-mono tracking-widest uppercase drop-shadow-md">
             SUCHIT VANAPILLI
           </p>
