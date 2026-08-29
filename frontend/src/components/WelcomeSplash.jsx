@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import FadeInLogo from "./FadeInLogo";
 
 const fullTitle = "Welcome to My Portfolio";
 
@@ -45,12 +46,12 @@ export default function WelcomeSplash({ onComplete }) {
       initial={{ opacity: 1 }}
       exit={{ opacity: 0, scale: 0.98 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
-      className="fixed inset-0 z-50 flex items-center justify-start bg-black text-white overflow-hidden p-6 sm:p-12"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black text-white overflow-hidden p-6 sm:p-12"
     >
       {/* Sleek Dark Tech Ambient Background */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none bg-black">
         {/* Dynamic ambient glowing light orbs */}
-        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-blue-600/15 rounded-full blur-[120px] pointer-events-none animate-pulse" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/15 rounded-full blur-[140px] pointer-events-none animate-pulse" />
         <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-indigo-600/10 rounded-full blur-[100px] pointer-events-none" />
 
         {/* High-Tech Grid Accent Pattern */}
@@ -58,13 +59,18 @@ export default function WelcomeSplash({ onComplete }) {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/80" />
       </div>
 
-      <div className="relative z-10 max-w-lg w-full text-left pl-2 sm:pl-8 lg:pl-16">
+      <div className="relative z-10 max-w-lg w-full text-center mx-auto px-4 flex flex-col items-center justify-center">
+        {/* Pure Fade-In SV Logo */}
+        <div className="mb-6">
+          <FadeInLogo className="w-28 h-28 sm:w-36 sm:h-36" />
+        </div>
+
         {/* Typewriter Welcome Title */}
         <motion.h1
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -15 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-5xl font-extrabold tracking-tight mb-2 min-h-[4rem] text-left leading-tight"
+          className="text-3xl sm:text-5xl font-extrabold tracking-tight mb-2 min-h-[4rem] text-center leading-tight"
         >
           <span className="text-white drop-shadow-xl">
             {typedTitle}
@@ -73,12 +79,12 @@ export default function WelcomeSplash({ onComplete }) {
         </motion.h1>
 
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="flex items-center gap-2.5 mb-8"
+          className="flex items-center justify-center gap-2.5 mb-8"
         >
-          <p className="text-sm font-bold text-blue-400 font-mono tracking-widest uppercase drop-shadow-md">
+          <p className="text-sm font-bold text-blue-400 font-mono tracking-widest uppercase drop-shadow-md text-center">
             SUCHIT VANAPILLI
           </p>
         </motion.div>
@@ -88,7 +94,7 @@ export default function WelcomeSplash({ onComplete }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="space-y-2 mb-8 max-w-sm"
+          className="space-y-2 mb-8 max-w-sm w-full mx-auto"
         >
           <div className="flex items-center justify-between text-xs font-mono text-slate-200 drop-shadow-sm">
             <span>{isDone ? "ASSETS LOADED" : "LOADING ASSETS"}</span>
@@ -111,6 +117,7 @@ export default function WelcomeSplash({ onComplete }) {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ type: "spring", stiffness: 400, damping: 25 }}
+              className="flex justify-center w-full"
             >
               <button
                 type="button"
