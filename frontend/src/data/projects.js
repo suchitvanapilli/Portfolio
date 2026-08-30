@@ -176,8 +176,7 @@ export const projects = [
       "Python",
       "JavaScript",
       "HTML5",
-      "Tailwind CSS",
-      "AI-Assisted Workflows"
+      "Tailwind CSS"
     ],
     capabilities: [
       "Community Cause Discovery & Volunteer Matching",
