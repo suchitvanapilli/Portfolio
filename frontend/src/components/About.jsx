@@ -28,10 +28,10 @@ export default function About() {
         {/* Section Header Title with Scroll-Reveal Animation */}
         <div className="mb-6">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.2 }}
-            transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: false, amount: 0.1 }}
+            transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
             className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-100 dark:border-blue-800 text-blue-700 dark:text-blue-300 text-xs font-bold uppercase tracking-wider mb-3 shadow-2xs"
           >
             <Sparkles className="w-3.5 h-3.5" />
@@ -40,10 +40,10 @@ export default function About() {
 
           {/* Heading → slides/fades upward */}
           <motion.h2
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.2 }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: false, amount: 0.1 }}
+            transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
             className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight"
           >
             About Me
@@ -53,8 +53,8 @@ export default function About() {
           <motion.div
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
-            viewport={{ once: false, amount: 0.2 }}
-            transition={{ duration: 0.65, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: false, amount: 0.1 }}
+            transition={{ duration: 0.4, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
             className="w-12 h-1 bg-blue-600 rounded-full mt-3 origin-left"
           />
         </div>
@@ -67,16 +67,16 @@ export default function About() {
             <AnimatePresence mode="wait">
               {activeTab === "story" && (
                 <div key="story" className="space-y-4">
-                  {/* Paragraphs → appear sequentially with staggered scroll-reveal */}
+                  {/* Paragraphs → appear sequentially with faster, smooth staggered scroll-reveal */}
                   {storyParagraphs.map((para, idx) => (
                     <motion.p
                       key={idx}
-                      initial={{ opacity: 0, y: 24 }}
+                      initial={{ opacity: 0, y: 12 }}
                       whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: false, amount: 0.2 }}
+                      viewport={{ once: false, amount: 0.1 }}
                       transition={{
-                        duration: 0.6,
-                        delay: 0.2 + idx * 0.12,
+                        duration: 0.35,
+                        delay: 0.05 + idx * 0.06,
                         ease: [0.22, 1, 0.36, 1]
                       }}
                       className={
