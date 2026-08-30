@@ -142,12 +142,14 @@ export default function Contact({ onShowToast }) {
           body: JSON.stringify(payloadToSend)
         });
       } catch {
-        // Fallback directly to backend port 5000 if proxy isn't active
-        response = await fetch("http://localhost:5000/api/contact", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payloadToSend)
-        });
+        // Fallback directly to backend port 5000 if proxy isn't active on local dev
+        if (typeof window !== "undefined" && (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")) {
+          response = await fetch("http://localhost:5000/api/contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payloadToSend)
+          });
+        }
       }
 
       if (response && response.ok) {
