@@ -205,14 +205,6 @@ export const projects = [
 
 export const experimentProjects = [
   {
-    id: "prompt-engineering-lab",
-    title: "Prompt Engineering & GenAI Optimization Pipelines",
-    type: "AI & Prompt Workflows",
-    description:
-      "Experiments in structured prompt engineering, system instructions, few-shot prompting strategies, and developer workflow acceleration using LLMs & Snowflake GenAI.",
-    tags: ["Prompt Eng.", "GenAI", "LLM Workflows", "AI Optimization"]
-  },
-  {
     id: "python-practice",
     title: "Python Problem Solving & Data Structures",
     type: "Learning & Practice",
