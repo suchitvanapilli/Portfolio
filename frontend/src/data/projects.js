@@ -205,6 +205,15 @@ export const projects = [
 
 export const experimentProjects = [
   {
+    id: "helping-hands-platform",
+    title: "Helping Hands Platform",
+    type: "Community & Social Impact",
+    description:
+      "An AI-assisted social impact web platform designed to seamlessly connect volunteers, donors, and community initiatives with non-profit causes.",
+    github: "https://github.com/suchitvanapilli/CWW-AI-STU-DATA",
+    tags: ["Python", "JavaScript", "HTML5", "Tailwind CSS"]
+  },
+  {
     id: "python-practice",
     title: "Python Problem Solving & Data Structures",
     type: "Learning & Practice",
