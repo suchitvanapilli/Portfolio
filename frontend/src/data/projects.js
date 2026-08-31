@@ -172,7 +172,6 @@ export const projects = [
     description:
       "A modern, responsive personal portfolio website built with React 18, Tailwind CSS, Framer Motion, and Node.js/Express backend API for contact messaging and analytics.",
     github: "https://github.com/suchitvanapilli/Portfolio",
-    demo: "https://portfolio-bice-psi-64.vercel.app",
     technologies: [
       "React",
       "Tailwind CSS",
