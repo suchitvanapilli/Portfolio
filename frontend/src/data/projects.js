@@ -164,40 +164,41 @@ export const projects = [
     ]
   },
   {
-    id: "helping-hands-platform",
-    title: "Helping Hands – Community & Social Service Platform",
-    shortTitle: "Helping Hands Platform",
+    id: "personal-portfolio-website",
+    title: "Personal Portfolio Website & Engineering Showcase",
+    shortTitle: "Personal Portfolio Website",
     featured: false,
-    tagline: "AI-Assisted Volunteer & Community Support Concept",
+    tagline: "High-Performance Developer Portfolio & Full-Stack Showcase",
     description:
-      "An AI-assisted social impact web platform designed to seamlessly connect volunteers, donors, and community initiatives with non-profit causes.",
-    github: "https://github.com/suchitvanapilli/CWW-AI-STU-DATA",
+      "A modern, responsive personal portfolio website built with React 18, Tailwind CSS, Framer Motion, and Node.js/Express backend API for contact messaging and analytics.",
+    github: "https://github.com/suchitvanapilli/Portfolio",
+    demo: "https://portfolio-bice-psi-64.vercel.app",
     technologies: [
-      "Python",
-      "JavaScript",
-      "HTML5",
-      "Tailwind CSS"
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Node.js"
     ],
     capabilities: [
-      "Community Cause Discovery & Volunteer Matching",
-      "Transparent Resource & Donation Request Tracking",
-      "Real-Time Incident Reporting & Volunteer Dispatch",
-      "Responsive Mobilization Portal & Dashboard",
-      "AI-Assisted Campaign Summary Generator"
+      "Responsive Dark & Light Mode Glassmorphic UI",
+      "Framer Motion Micro-Interactions & Animated Splash Entrance",
+      "Express.js & MongoDB Contact Form API with Rate Limiting",
+      "PWA Mobile Support & Fast Vercel Continuous Deployment",
+      "Interactive Project Detail Modals & Metric Snapshots"
     ],
     problem:
-      "Community organizations and individual volunteers often struggle to coordinate aid efficiently due to fragmented channels and lack of centralized initiative visibility.",
+      "Developers require a fast, accessible, and polished digital presence to present their engineering work, technical skills, and background without performance bloat.",
     solution:
-      "Engineered an accessible web platform concept that streamlines cause creation, volunteer signups, and transparent resource distribution for community welfare.",
+      "Engineered an interactive single-page portfolio application featuring modular component architecture, dark mode preference detection, responsive layouts, and zero-delay animations.",
     architectureSteps: [
-      { step: "01", name: "Cause Portal", desc: "Responsive portal for discovering & registering social initiatives" },
-      { step: "02", name: "Volunteer Match", desc: "Category-based skill and location matching algorithm" },
-      { step: "03", name: "Resource Tracking", desc: "Transparent allocation tracking for supplies and donations" },
-      { step: "04", name: "AI Summarizer", desc: "AI-generated progress briefs & impact campaign reports" }
+      { step: "01", name: "SPA Interface", desc: "React 18 + Tailwind CSS responsive single-page architecture" },
+      { step: "02", name: "Animations Layer", desc: "Framer Motion scroll-reveals & typewriter splash screen" },
+      { step: "03", name: "Express API", desc: "Node.js REST backend handling contact submissions & rate limiting" },
+      { step: "04", name: "CI/CD & Hosting", desc: "GitHub version control & automated Vercel production builds" }
     ],
     highlights: [
-      "Intuitive workflow empowering fast cause creation and volunteer onboarding",
-      "Clean visual cards displaying active community drives and urgency levels",
+      "Built with modular React 18 components and Tailwind CSS utility styling",
+      "Fast sub-second initial load with Vercel edge deployment",
       "Open-source repository available on GitHub"
     ]
   }
