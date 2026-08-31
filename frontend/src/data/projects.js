@@ -93,12 +93,12 @@ export const projects = [
     description:
       "A responsive railway reservation web application with train search, booking workflows, passenger management, berth allocation, PNR tracking and ticket management.",
     github: "https://github.com/suchitvanapilli/Railway-reservation-system",
+    demo: "https://velvety-twilight-265750.netlify.app/",
     technologies: [
       "HTML",
       "CSS",
       "JavaScript",
-      "Tailwind CSS",
-      "Responsive UI"
+      "Tailwind CSS"
     ],
     capabilities: [
       "Interactive Train Route & Schedule Search",
