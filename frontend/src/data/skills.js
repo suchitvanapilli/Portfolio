@@ -36,8 +36,7 @@ export const skillCategories = [
     skills: [
       { name: "MongoDB", level: "NoSQL DB", highlight: true, role: "Document-oriented cloud database storage for contact messages and web analytics." },
       { name: "PostgreSQL", level: "Relational DB", highlight: true, role: "Advanced relational database schemas, transactions, and index optimization." },
-      { name: "SQLite", level: "Embedded DB", highlight: true, role: "Lightweight local embedded database used in biometric attendance portal." },
-      { name: "SQLAlchemy", level: "Python ORM", highlight: false, role: "Relational entity mapping, persistent database models, and transactions." }
+      { name: "SQLite", level: "Embedded DB", highlight: true, role: "Lightweight local embedded database used in biometric attendance portal." }
     ]
   },
   {
