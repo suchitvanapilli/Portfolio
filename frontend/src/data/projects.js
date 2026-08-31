@@ -54,12 +54,12 @@ export const projects = [
     description:
       "A responsive community health monitoring platform focused on water-quality monitoring, disease surveillance, alerts and interactive health analytics.",
     github: "https://github.com/suchitvanapilli/Health-Monitoring",
+    demo: "https://health-monitoring-eight.vercel.app/",
     technologies: [
       "HTML5",
       "Tailwind CSS",
       "JavaScript",
-      "Chart.js",
-      "Data Visualization"
+      "Chart.js"
     ],
     capabilities: [
       "Real-time Water Quality Parameter Tracking (pH, Turbidity, TDS)",
