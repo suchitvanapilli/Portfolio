@@ -50,9 +50,9 @@ export const projects = [
     title: "Smart Health Monitoring System",
     shortTitle: "Smart Health Monitoring",
     featured: false,
-    tagline: "Community Water Quality & Disease Surveillance Platform",
+    tagline: "Water Quality & Disease Surveillance Platform for North East India",
     description:
-      "A responsive community health monitoring platform focused on water-quality monitoring, disease surveillance, alerts and interactive health analytics.",
+      "A responsive community health monitoring platform designed for North East India, focusing on water-quality monitoring, disease surveillance, alerts and interactive health analytics.",
     github: "https://github.com/suchitvanapilli/Health-Monitoring",
     demo: "https://health-monitoring-eight.vercel.app/",
     technologies: [
@@ -62,16 +62,16 @@ export const projects = [
       "Chart.js"
     ],
     capabilities: [
-      "Real-time Water Quality Parameter Tracking (pH, Turbidity, TDS)",
+      "Real-time Water Quality Parameter Tracking for North East Regions (pH, Turbidity, TDS)",
       "Disease Trend Surveillance & Outbreak Warning Alerts",
       "Citizen Incident Reporting & Community Feedback Intake",
       "Interactive Chart.js Analytical Dashboards",
       "Role-based Dashboard Views for Citizens & Health Officials"
     ],
     problem:
-      "Rural and semi-urban communities often lack centralized visibility into water safety metrics and early indicators of waterborne disease outbreaks, leading to delayed medical interventions.",
+      "Rural and flood-prone communities in North East India often lack centralized visibility into water safety metrics and early indicators of waterborne disease outbreaks, leading to delayed medical interventions.",
     solution:
-      "Developed a clean, accessible health dashboard that aggregates water testing data and symptom reports into visual trend charts with instant alert thresholds for public health action.",
+      "Developed a clean, accessible health dashboard tailored for North East India that aggregates water testing data and symptom reports into visual trend charts with instant alert thresholds for public health action.",
     architectureSteps: [
       { step: "01", name: "Responsive UI", desc: "Mobile-first HTML5 & Tailwind interface for citizens & admins" },
       { step: "02", name: "Application Logic", desc: "Modular vanilla JavaScript controllers & event handlers" },
