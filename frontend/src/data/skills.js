@@ -41,11 +41,18 @@ export const skillCategories = [
   },
   {
     category: "AI / ML",
-    description: "Machine learning concepts, vision pipelines & prompt engineering",
+    description: "Machine learning frameworks, computer vision pipelines, neural networks & prompt engineering",
     skills: [
+      { name: "PyTorch", level: "Deep Learning", highlight: true, role: "Neural network model training, tensor operations, and GPU-accelerated deep learning." },
+      { name: "TensorFlow", level: "ML Framework", highlight: true, role: "End-to-end machine learning platform, Keras models, and deployment pipelines." },
+      { name: "Scikit-Learn", level: "ML Algorithms", highlight: true, role: "Supervised and unsupervised learning, regression, classification, and model evaluation." },
       { name: "OpenCV", level: "Computer Vision", highlight: true, role: "Real-time webcam frame processing, face detection, and image preprocessing." },
       { name: "NumPy", level: "Array Computing", highlight: true, role: "High-performance vector matrices, embedding calculations, and numerical processing." },
+      { name: "Pandas", level: "Data Analysis", highlight: true, role: "Dataframe manipulation, data cleaning, feature engineering, and analytics." },
       { name: "Hugging Face", level: "Model Hub", highlight: true, role: "Transformer model pipelines, open-weight LLMs, and NLP integrations." },
+      { name: "LangChain", level: "LLM Framework", highlight: true, role: "Building context-aware LLM applications, RAG pipelines, and agent tools." },
+      { name: "MediaPipe", level: "Vision Tracking", highlight: false, role: "Real-time face mesh, landmark tracking, and gesture recognition pipelines." },
+      { name: "YOLO", level: "Object Detection", highlight: false, role: "Real-time multi-object detection, bounding box prediction, and tracking." },
       { name: "Prompt Engineering", level: "Optimization", highlight: true, role: "Structured system prompts, few-shot techniques, and GenAI pipeline optimization." }
     ]
   },

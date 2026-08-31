@@ -370,6 +370,56 @@ export function TechIcon({ name, className = "w-5 h-5" }) {
           <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
         </svg>
       );
+    case "pytorch":
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.6 2.2l1.6 1.6-1.7 1.7a6.8 6.8 0 102.7 6.4h2.4a9.2 9.2 0 11-3.6-8.2l1.6-1.5zM15 6.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3z" fill="#EE4C2C"/>
+        </svg>
+      );
+    case "tensorflow":
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L3 7v10l5-2.8V9.5L12 12l4-2.5v4.7l5 2.8V7l-9-5z" fill="#FF6F00"/>
+          <path d="M12 12l-4-2.5V14.2l4 2.3 4-2.3V9.5L12 12z" fill="#FF8F00"/>
+        </svg>
+      );
+    case "scikitlearn":
+    case "sklearn":
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9" fill="#F7931E"/>
+          <path d="M12 6a6 6 0 00-6 6c0 3.3 2.7 6 6 6s6-2.7 6-6c0-3.3-2.7-6-6-6zm0 9a3 3 0 110-6 3 3 0 010 6z" fill="#3499CD"/>
+        </svg>
+      );
+    case "pandas":
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="4" width="4" height="16" fill="#150458"/>
+          <rect x="10" y="4" width="4" height="16" fill="#E70488"/>
+          <rect x="16" y="4" width="4" height="16" fill="#00C041"/>
+        </svg>
+      );
+    case "langchain":
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" rx="6" fill="#1C3C3C"/>
+          <path d="M8 7h8v2H8V7zm0 4h8v2H8v-2zm0 4h5v2H8v-2z" fill="#38BDF8"/>
+        </svg>
+      );
+    case "mediapipe":
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" rx="6" fill="#00A3FF"/>
+          <circle cx="12" cy="12" r="5" fill="#FFFFFF"/>
+        </svg>
+      );
+    case "yolo":
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" rx="6" fill="#1E293B"/>
+          <path d="M7 7l5 5 5-5M12 12v5" stroke="#38BDF8" strokeWidth="2" strokeLinecap="round"/>
+        </svg>
+      );
     case "machinelearning":
     case "llmapplications":
     case "promptengineering":
