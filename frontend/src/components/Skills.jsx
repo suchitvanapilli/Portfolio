@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { skillCategories } from "../data/skills";
 import { TechIcon } from "./TechLogos";
 import FlowingLogos from "./FlowingLogos";
-import { Code, Layout, Server, Database, Cpu, Wrench, Sparkles, Search, CheckCircle2, X } from "lucide-react";
+import { Code, Layout, Server, Database, Cpu, Bot, Wrench, Sparkles, Search, CheckCircle2, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Skills() {
@@ -16,7 +16,8 @@ export default function Skills() {
     "BACKEND": Server,
     "DATABASE": Database,
     "AI / ML": Cpu,
-    "TOOLS": Wrench
+    "AI TOOLS": Bot,
+    "DEVELOPER & DESIGN TOOLS": Wrench
   };
 
   const categoryColors = {
@@ -25,10 +26,20 @@ export default function Skills() {
     "BACKEND": "from-emerald-500 to-teal-600 text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 border-emerald-200 dark:border-emerald-800",
     "DATABASE": "from-indigo-500 to-purple-600 text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60 border-indigo-200 dark:border-indigo-800",
     "AI / ML": "from-purple-600 to-pink-600 text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-950/60 border-purple-200 dark:border-purple-800",
-    "TOOLS": "from-amber-500 to-orange-600 text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/60 border-amber-200 dark:border-amber-800"
+    "AI TOOLS": "from-rose-500 to-pink-600 text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/60 border-rose-200 dark:border-rose-800",
+    "DEVELOPER & DESIGN TOOLS": "from-amber-500 to-orange-600 text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/60 border-amber-200 dark:border-amber-800"
   };
 
-  const filterTabs = ["ALL", "PROGRAMMING", "FRONTEND", "BACKEND", "DATABASE", "AI / ML", "TOOLS"];
+  const filterTabs = [
+    "ALL",
+    "PROGRAMMING",
+    "FRONTEND",
+    "BACKEND",
+    "DATABASE",
+    "AI / ML",
+    "AI TOOLS",
+    "DEVELOPER & DESIGN TOOLS"
+  ];
 
   const filteredCategories = skillCategories
     .filter((catGroup) => activeCategory === "ALL" || catGroup.category === activeCategory)

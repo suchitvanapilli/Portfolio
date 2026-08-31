@@ -37,17 +37,23 @@ export const skillCategories = [
       { name: "MongoDB", level: "NoSQL DB", highlight: true, role: "Document-oriented cloud database storage for contact messages and web analytics." },
       { name: "PostgreSQL", level: "Relational DB", highlight: true, role: "Advanced relational database schemas, transactions, and index optimization." },
       { name: "SQLite", level: "Embedded DB", highlight: true, role: "Lightweight local embedded database used in biometric attendance portal." },
-      { name: "SQL", level: "Queries", highlight: true, role: "Structured query language, joins, primary/foreign keys, and data definition." },
       { name: "SQLAlchemy", level: "Python ORM", highlight: false, role: "Relational entity mapping, persistent database models, and transactions." }
     ]
   },
   {
     category: "AI / ML",
-    description: "Machine learning concepts, vision pipelines & AI productivity tools",
+    description: "Machine learning concepts, vision pipelines & prompt engineering",
     skills: [
       { name: "OpenCV", level: "Computer Vision", highlight: true, role: "Real-time webcam frame processing, face detection, and image preprocessing." },
       { name: "NumPy", level: "Array Computing", highlight: true, role: "High-performance vector matrices, embedding calculations, and numerical processing." },
       { name: "Hugging Face", level: "Model Hub", highlight: true, role: "Transformer model pipelines, open-weight LLMs, and NLP integrations." },
+      { name: "Prompt Engineering", level: "Optimization", highlight: true, role: "Structured system prompts, few-shot techniques, and GenAI pipeline optimization." }
+    ]
+  },
+  {
+    category: "AI TOOLS",
+    description: "Generative AI assistants, coding agents & AI productivity platforms",
+    skills: [
       { name: "ChatGPT", level: "GenAI Assistant", highlight: true, role: "Generative AI coding assistant, reasoning workflows, and prompt engineering." },
       { name: "Antigravity", level: "Agentic AI", highlight: true, role: "Advanced agentic coding, automated project refactoring, and AI pairing." },
       { name: "Claude", level: "LLM Reasoning", highlight: true, role: "Complex code analysis, deep architecture reasoning, and document synthesis." },
@@ -59,13 +65,12 @@ export const skillCategories = [
       { name: "Replit", level: "Cloud AI IDE", highlight: true, role: "Cloud environment deployment, instant AI coding sandbox, and backend hosting." },
       { name: "Bolt", level: "Web AI Sandbox", highlight: true, role: "In-browser WebContainer dev environments and AI web app generation." },
       { name: "ElevenLabs", level: "AI Voice Gen", highlight: false, role: "High-fidelity synthetic voice generation and audio AI cloning." },
-      { name: "Runway", level: "AI Video Gen", highlight: false, role: "Generative video synthesis, motion tracking, and AI visual production." },
-      { name: "Prompt Engineering", level: "Optimization", highlight: true, role: "Structured system prompts, few-shot techniques, and GenAI pipeline optimization." }
+      { name: "Runway", level: "AI Video Gen", highlight: false, role: "Generative video synthesis, motion tracking, and AI visual production." }
     ]
   },
   {
-    category: "TOOLS",
-    description: "Design, video editing, cloud deployment & developer tools",
+    category: "DEVELOPER & DESIGN TOOLS",
+    description: "Code editors, cloud platforms, version control & UI design suites",
     skills: [
       { name: "VS Code", level: "Primary IDE", highlight: true, role: "Main code editor environment, extension workflows, and terminal debugging." },
       { name: "Vercel", level: "Cloud Platform", highlight: true, role: "Automated continuous deployment, edge network hosting, and domain management." },
