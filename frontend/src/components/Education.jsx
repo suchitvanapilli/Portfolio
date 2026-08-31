@@ -38,7 +38,7 @@ export default function Education() {
             </span>
             <div className="text-left">
               <p className="text-[10px] font-mono uppercase tracking-wider text-slate-400">Current Standing</p>
-              <p className="text-xs font-bold text-emerald-300">3rd Year Undergrad (2024–2028)</p>
+              <p className="text-xs font-bold text-emerald-300">3rd Year B.Tech (2024–2028)</p>
             </div>
           </div>
         </div>
