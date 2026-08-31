@@ -1,7 +1,7 @@
 export const currentFocusAreas = [
   {
     number: "01",
-    title: "Frontend Development",
+    title: "Full-Stack Development",
     tagline: "Architecture & Integration",
     description:
       "Building stronger frontend, backend, API and database development skills with modern frameworks and robust engineering patterns.",

@@ -197,8 +197,8 @@ export default function About() {
                   transition={{ duration: 0.5, delay: 0.56 }}
                   className="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800 text-center"
                 >
-                  <p className="text-base font-extrabold text-indigo-600 dark:text-indigo-400 font-mono">Frontend</p>
-                  <p className="text-[11px] text-slate-500 dark:text-slate-400 font-medium mt-0.5">React + Tailwind</p>
+                  <p className="text-base font-extrabold text-indigo-600 dark:text-indigo-400 font-mono">Full-Stack</p>
+                  <p className="text-[11px] text-slate-500 dark:text-slate-400 font-medium mt-0.5">React + Node/FastAPI</p>
                 </motion.div>
 
                 <motion.div
